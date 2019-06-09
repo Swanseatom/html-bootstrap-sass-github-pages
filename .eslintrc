@@ -1,0 +1,125 @@
+{
+    "extends": [
+      "airbnb-base"
+    ],
+    "parser": "babel-eslint",
+    "globals": {
+      "__DEV__": true,
+      "window": true,
+      "document": true,
+      "__version__": true,
+      "__buildNumber__": true
+    },
+    "settings": {
+      "node": {
+        "extensions": [
+          ".es6",
+          ".js",
+          ".json"
+        ]
+      }
+    },
+    "rules": {
+      "no-use-before-define": 0,
+      "no-unused-vars": "error",
+      "generator-star-spacing": [
+        2,
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "one-var": [
+        "error",
+        "never"
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "new-cap": [
+        "error",
+        {
+          "capIsNew": false
+        }
+      ],
+      "camelcase": [
+        "error",
+        {
+          "properties": "never"
+        }
+      ],
+      "comma-dangle": [
+        2,
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "ignore"
+        }
+      ],
+      "consistent-return": 0,
+      "consistent-this": [
+        2,
+        "_this"
+      ],
+      "import/prefer-default-export": 0,
+      "import/extensions": [
+        2,
+        "never",
+        {
+          "json": "always"
+        }
+      ],
+      "max-len": [
+        2,
+        130,
+        2,
+        {
+          "ignoreComments": true,
+          "ignoreStrings": true,
+          "ignoreUrls": true,
+          "ignorePattern": "^\\s*var\\s.+=\\s*(require\\s*\\()|(/)"
+        }
+      ],
+      "no-param-reassign": [
+        2,
+        {
+          "props": false
+        }
+      ],
+      "no-bitwise": [
+        2,
+        {
+          "allow": [
+            "~"
+          ]
+        }
+      ],
+      "no-plusplus": 0,
+      "no-underscore-dangle": 0,
+      "prefer-const": [
+        2,
+        {
+          "destructuring": "all"
+        }
+      ],
+      "no-restricted-syntax": [
+        "error",
+        "ForInStatement",
+        "LabeledStatement",
+        "WithStatement"
+      ],
+      "strict": "off",
+      "function-paren-newline": "off",
+      "no-console": "off",
+      "prefer-promise-reject-errors": "off",
+      "no-nested-ternary": "warn",
+      "import/no-named-default": "off",
+      "import/no-named-as-default": "off",
+      "import/no-named-as-default-member": "off",
+      "class-methods-use-this": "off"
+    }
+  }
+
